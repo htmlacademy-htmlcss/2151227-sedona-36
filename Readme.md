@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Георгий Шулаия](https://up.htmlacademy.ru/htmlcss/36/user/2151227).
-* Наставник: `Неизвестно`.
+- Студент: [Георгий Шулаия](https://up.htmlacademy.ru/htmlcss/36/user/2151227).
+- Наставник: [Наталья Соболева](https://htmlacademy.ru/profile/id1841813).
 
 ---
 
