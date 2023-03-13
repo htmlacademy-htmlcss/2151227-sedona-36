@@ -1,13 +1,34 @@
+@font-face{
+    font-family: 'PT Sans';
+    scr: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'PT Sans';
+    scr: url(../fonts/ptsans-400.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'PT Sans Bold';
+    scr: url(../fonts/ptsans-700.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
 body{
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0;
-margin: 0;
-width: 1200px;
-background: #FFFFFF;
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-}
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    max-width: 1200px;
+    background: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    margin-left: auto;
+    margin-right: auto;
+    }
+
 main{
     width: 100%;
 }
@@ -28,8 +49,6 @@ main{
     height: 64px;
 }
 .logo-city-of-sedona{
-    position: absolute;
-
     height: 70px;
     left: 0;
     top: 0;
@@ -37,13 +56,11 @@ main{
 }
 .navigation-list{
     display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0;
-margin-left: 238px;
-
-height: 64px;
-list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    height: 64px;
+    list-style: none;
 }
 .navigation-item{
     display: flex;
@@ -134,7 +151,7 @@ height: 157px;
 flex-direction: column;
 align-items: flex-start;
 padding: 0;
-
+border-style: none;
 margin-bottom: 32px;
 margin-right: 70px;
 }
@@ -227,7 +244,7 @@ margin-right: 70px;
     width: 160px;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 17px;
 
 }
 .button{
@@ -248,6 +265,7 @@ margin-right: 70px;
     color: #ffffff;
     background-color: #82B3D3;
     text-transform: uppercase;
+    margin-bottom: 40px;
 }
 .control-input-reset{
     font-size: 16px;
@@ -318,14 +336,19 @@ margin-right: 70px;
 .product-card{
     display: grid;
     grid-template-columns: repeat(2, 140px);
-    margin: 17px 19px 23px 21px;
+    padding: 20px;
     gap: 16px 20px;
+    border: 1px solid #E6E6E6;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .product-card-image{
     grid-column: 1/-1;
     object-fit: contain;
 }
 .product-card-title{
+    font-family: 'PT Sans';
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -338,6 +361,9 @@ margin-right: 70px;
     color: #333333;
     background-color: #ffffff;
     margin: 0;
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 17px;
 }
 .product-card-price{
     font-size: 18px;
@@ -345,6 +371,9 @@ margin-right: 70px;
     color: #333333;
     background-color: #ffffff;
     margin: 0;
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 17px;
 }
 .button-basic{
     font-weight: 700;
@@ -371,15 +400,25 @@ margin-right: 70px;
     text-transform: uppercase;
     width: 140px;
 }
+.button-favourites:hover {
+	background: #7DB54F;;
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
+}
 .button-selected{
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
     text-align: center;
     color: #ffffff;
-    background-color: #7DB54F;
+    background-color: #82B3D3;
     text-transform: uppercase;
     width: 140px;
+}
+.button-selected:hover{
+    background: #7DB54F;
+	color: #3a7999;
+	box-shadow: inset 0 0 0 3px #3a7999;
 }
 .hotel-card-rating{
     font-size: 18px;
@@ -474,6 +513,7 @@ text-align: center;
     padding-top: 20px;
     padding-bottom: 19px;
     border-radius: 10px 0 0 10px;
+    border-style: none;
 }
 .button-newsletter{
     width: 200px;
