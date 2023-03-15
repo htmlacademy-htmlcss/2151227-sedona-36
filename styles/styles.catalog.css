@@ -27,11 +27,12 @@ body{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     margin-left: auto;
     margin-right: auto;
-    }
+}
 
 main{
     width: 100%;
 }
+
 .page-header{
     display: flex;
     flex-direction: row;
@@ -40,6 +41,7 @@ main{
     background: #FFFFFF;
     height: 64px;
 }
+
 .navigation{
     display: flex;
     flex-direction: row;
@@ -48,12 +50,14 @@ main{
     align-items: center;
     height: 64px;
 }
+
 .logo-city-of-sedona{
     height: 70px;
     left: 0;
     top: 0;
     margin-left: 70px;
 }
+
 .navigation-list{
     display: flex;
     flex-direction: row;
@@ -62,51 +66,54 @@ main{
     height: 64px;
     list-style: none;
 }
+
 .navigation-item{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
     display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 20px 16px;
 }
+
 .visually-hidden{
     visibility: hidden;
     display: none;
 }
+
 .navigation-link{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
     font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-color: #000000;
-text-decoration: none;
 }
+
 .button-header{
-width: 160px;
-height: 36px;
-background: #756157;
-border-radius: 4px;
-margin-right: 70px;
-margin-left: 33px;
+    height: 36px;
+    background: #756157;
+    border-radius: 4px;
+    margin-right: 70px;
+    margin-left: 33px;
+    width: 160px;
 }
+
 .navigation-link-search{
     margin-left: 254px;
     text-decoration: none;
 }
 
-
-
-
 .inner-header-title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color:#FFFFFF;
+    margin-bottom: 10px;
     font-family: 'PT Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 78px;
-color:#FFFFFF;
-margin-bottom: 10px;
+    font-style: normal;
 }
+
 .main-inner{
     background-image: url(../images/Фильтр.png);
     background-size: cover;
@@ -117,71 +124,79 @@ margin-bottom: 10px;
     flex-direction: column;
     padding: 35px 70px 66px 70px;
 }
+
 .breadcrumbs{
     display: flex;
     padding: 0;
     margin-bottom: 40px;
 }
+
 .breadcrumbs-item{
-cursor: pointer;
-list-style: none;
-margin-right: 11px;
+    list-style: none;
+    margin-right: 11px;
+    cursor: pointer;
 }
+
 .catalog-filter{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: flex-start;
-padding: 0;
-width: 1060px;
-height: 160px;
-
-}
-.catalog-filter-first-element{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    width: 1060px;
+    height: 160px;
     display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0;
-
-width: 390px;
-height: 157px;
 }
+
+.catalog-filter-first-element{
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    width: 390px;
+    height: 157px;
+    display: flex;
+}
+
 .catalog-filter-group{
     display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0;
-border-style: none;
-margin-bottom: 32px;
-margin-right: 70px;
+    align-items: flex-start;
+    padding: 0;
+    border-style: none;
+    margin-bottom: 32px;
+    margin-right: 70px;
+    flex-direction: column;
 }
+
 .catalog-filter-item{
     margin-bottom: 16px;
     list-style: none;
 }
+
 .catalog-filter-list{
     padding: 0;
 }
+
 .catalog-filter-second-element{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 0;
-
-
 }
+
 .title-range{
     margin-bottom: 32px;
 }
+
 .range-price-container{
     display: flex;
     margin-bottom: 48px;
 }
+
 .cost-field{
     display: flex;
     position: relative;
 }
+
 .range-price{
     font-size: 18px;
     line-height: 21px;
@@ -191,12 +206,15 @@ margin-right: 70px;
     left: 110px;
     color: black;
 }
+
 .range-input-left{
     border-radius: 4px;
 }
+
 .range-input-right{
     border-radius: 4px;
 }
+
 .range-input{
     width: 144px;
     margin: 0;
@@ -210,11 +228,13 @@ margin-right: 70px;
     padding: 12px 14px 12px 14px;
     color: #000000;
 }
+
 .range-scale{
     position: relative;
     height: 4px;
     background-color: rgba(255, 255, 255, 0.3);
 }
+
 .range-bar{
     position: absolute;
     height: 4px;
@@ -222,13 +242,16 @@ margin-right: 70px;
     left: 0;
     width: 227px;
 }
+
 .toggle-min{
     top: -8px;
 }
+
 .toggle-max{
     top: -8px;
     right: -9px;
 }
+
 .range-toggle{
     position: absolute;
     width: 20px;
@@ -247,6 +270,7 @@ margin-right: 70px;
     margin-bottom: 17px;
 
 }
+
 .button{
     width: 160px;
     padding: 14px 15px;
@@ -257,6 +281,7 @@ margin-right: 70px;
     border-radius: 4px;
     cursor: pointer;
 }
+
 .button-second{
     font-weight: 700;
     font-size: 16px;
@@ -267,6 +292,7 @@ margin-right: 70px;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
+
 .control-input-reset{
     font-size: 16px;
     line-height: 20px;
@@ -277,14 +303,17 @@ margin-right: 70px;
     padding: 3px 13px;
     box-sizing: border-box;
 }
+
 .catalog-sorting{
     padding: 50px 71px 56px;
 }
+
 .catalog-sorting-container{
     display: flex;
     width: 1057px;
     align-items: center;
 }
+
 .catalog-sorting-text{
     font-weight: 700;
     font-size: 30px;
@@ -293,7 +322,6 @@ margin-right: 70px;
     text-transform: uppercase;
     margin: 0;
     margin-right: 200px;
-
 }
 
 .select-control{
@@ -302,20 +330,18 @@ margin-right: 70px;
     line-height: 21px;
     color: #333333;
     background-color: #ffffff;
-
-
     border: 2px solid #E5E5E5;
     border-radius: 4px;
     padding: 13px 32px 13px 20px;
-
-
 }
+
 .button-view-container{
     display: flex;
     width: 160px;
     margin-left: auto;
     flex-wrap: nowrap;
 }
+
 .button-grid,
 .button-cards{
     margin-right: 5px;
@@ -325,6 +351,7 @@ margin-right: 70px;
     width: 1056px;
     margin: 0 auto;
 }
+
 .product-list{
     display: grid;
     grid-template-columns: repeat(3, 340px);
@@ -333,6 +360,7 @@ margin-right: 70px;
     padding: 0;
     list-style-type: none;
 }
+
 .product-card{
     display: grid;
     grid-template-columns: repeat(2, 140px);
@@ -343,10 +371,12 @@ margin-right: 70px;
     margin-bottom: 18px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
+
 .product-card-image{
     grid-column: 1/-1;
     object-fit: contain;
 }
+
 .product-card-title{
     font-family: 'PT Sans';
     font-weight: 700;
@@ -355,6 +385,7 @@ margin-right: 70px;
     grid-column: 1/-1;
     margin: 0;
 }
+
 .product-card-name{
     font-size: 18px;
     line-height: 21px;
@@ -365,6 +396,7 @@ margin-right: 70px;
     font-weight: 400;
     font-size: 17px;
 }
+
 .product-card-price{
     font-size: 18px;
     line-height: 21px;
@@ -375,7 +407,9 @@ margin-right: 70px;
     font-weight: 400;
     font-size: 17px;
 }
+
 .button-basic{
+    font-family: 'PT Sans';
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -384,13 +418,18 @@ margin-right: 70px;
     background-color: #756157;
     text-transform: uppercase;
 }
+
 .hotel-description-link{
     text-decoration: none;
+
 }
+
 .hotel-card-button{
     width: 140px;
 }
+
 .button-favourites{
+    font-family: 'PT Sans';
     font-weight: 700;
     font-size: 15px;
     line-height: 20px;
@@ -400,11 +439,13 @@ margin-right: 70px;
     text-transform: uppercase;
     width: 140px;
 }
+
 .button-favourites:hover {
 	background: #7DB54F;;
 	color: #3a7999;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
+
 .button-selected{
     font-weight: 700;
     font-size: 15px;
@@ -415,11 +456,13 @@ margin-right: 70px;
     text-transform: uppercase;
     width: 140px;
 }
+
 .button-selected:hover{
     background: #7DB54F;
 	color: #3a7999;
 	box-shadow: inset 0 0 0 3px #3a7999;
 }
+
 .hotel-card-rating{
     font-size: 18px;
     line-height: 21px;
@@ -427,6 +470,7 @@ margin-right: 70px;
     background-color: #ffffff;
     margin: 0;
 }
+
 .hotel-card-rating-text{
     font-size: 18px;
     line-height: 19px;
@@ -434,6 +478,7 @@ margin-right: 70px;
     text-align: center;
     padding: 9px 21px 8px;
 }
+
 .pagination-container{
     margin-left: 70px;
     margin-top: 80px;
