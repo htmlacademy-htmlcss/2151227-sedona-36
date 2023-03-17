@@ -568,6 +568,7 @@ text-align: center;
     padding-bottom: 19px;
     border-radius: 10px 0 0 10px;
     border-style: none;
+    outline: none;
 }
 .button-newsletter{
     width: 200px;
