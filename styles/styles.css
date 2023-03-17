@@ -1,11 +1,11 @@
 @font-face{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     scr: url(../fonts/ptsans-400.woff2) format("woff2");
     font-weight: 400;
     font-style: normal;
 }
 @font-face{
-    font-family: 'PT Sans Bold';
+    font-family: 'PT Sans Bold', sans-serif;
     scr: url(../fonts/ptsans-700.woff2) format("woff2");
     font-weight: 700;
     font-style: normal;
@@ -24,75 +24,138 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
+.maine-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
 .page-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1200px;
-    background: #FFFFFF;
-    height: 64px;
+    color: #000000;
+    background-color: #FFFFFF;
 }
-
-.navigation{
+.header-navigation{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 0;
     align-items: center;
-    height: 64px;
+    width: 1060px;
+    margin: 0 auto;
 }
-
-.logo-city-of-sedona{
-    margin-left: 70px;
+.navigation-logo{
+    display: block;
+    margin-right: 30px;
+    width: 140px;
+    height: 70px;
+    margin-bottom: -6px;
 }
-
 .navigation-list{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    height: 64px;
+    flex-wrap: wrap;
     list-style: none;
-}
-
-.navigation-item{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 16px;
-}
-
-.visually-hidden{
-    visibility: hidden;
-    display: none;
+    padding: 0;
+    margin: 0;
 }
 .navigation-link{
-    font-family: 'PT Sans';
-    font-style: normal;
+    display: block;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 16px;
+}
+.navigation-link-current{
+    position: relative;
+}
+.navigation-link-current::after{
+    position: absolute;
+    content: "";
+    right: 16px;
+    left: 16px;
+    bottom: 0;
+    height: 2px;
+    background-color: #756157;
+}
+.user-navigation{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    padding: 0;
+    list-style: none;
+}
+.user-navigation-link{
+    display: block;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
     color: #000000;
     text-decoration: none;
+    text-align: center;
 }
-
-.button-header{
-    height: 36px;
-    width: 160px;
-    border-radius: 4px;
-    margin-right: 70px;
-    margin-left: 33px;
-    border-style: none;
-    background: #756157;
+.user-navigation-search{
+    min-width: 44px;
+    min-height: 64px;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.navigation-link-search{
-    margin-left: 254px;
+.user-navigation-favorits{
+    position: relative;
+    min-width: 44px;
+    min-height: 64px;
+    margin-right: 20px;
+    background-image: url(../images/like.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.user-navigation-favorits::after{
+    position: absolute;
+    top: 11px;
+    left: 20px;
+    content: "12";
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+    line-height: 10px;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background-color: #7DB54F;
+}
+.user-btn{
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    background-color: #756157;
+    text-align: center;
+    text-transform: uppercase;
     text-decoration: none;
+    padding: 8px 34px;
+    border-radius: 4px;
 }
-
+.user-btn:hover{
+    background-color: #615048;
+}
+.user-btn:focus{
+    background-color: #615048;
+}
+.user-btn:active{
+    background-color: #756157;
+    color: rgba(255, 255, 255, 0.3);
+}
+.user-btn:disabled{
+    background-color: rgba(229, 229, 229, 1);
+}
+.visually-hidden{
+    visibility: hidden;
+    display: none;
+}
 .popover{
     display: none;
 }
@@ -121,10 +184,11 @@ body{
 }
 
 .popover-container{
-    position: absolute;
     background-color: rgba(242, 242, 242, 0.8);
-    width: 1200px;
-    height: 3681px;
+}
+
+.popover-container-close{
+    display: none;
 }
 
 .header-popover{
@@ -175,7 +239,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 #date-check-in{
@@ -183,7 +247,7 @@ body{
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 #date-check-out{
@@ -191,7 +255,7 @@ body{
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .popover-title{
@@ -200,7 +264,7 @@ body{
     font-size: 26px;
     line-height: 36px;
     color: #000000;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .people{
@@ -252,7 +316,7 @@ body{
     margin-top: 48px;
     background: #83B3D3;
     border-radius: 10px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -268,7 +332,7 @@ body{
 }
 
 .tooltip{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -289,7 +353,7 @@ body{
 	visibility: hidden;
 	transition: all 0.4s ease-in-out;
     padding: 15px 18px 18px 22px;
-    transform: translateX(-45%)translateY(50px);
+    transform: translateX(-60%)translateY(50px);
 }
 
 .tooltip:hover::after {
@@ -324,11 +388,11 @@ body{
     margin-bottom: 25px;
     text-align:center;
     text-transform: uppercase;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .introductory-text{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -376,7 +440,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .text{
@@ -388,7 +452,7 @@ body{
     color: #FFFFFF;
     margin-left: 85px;
     margin-right: 85px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .advantages-list{
@@ -437,7 +501,7 @@ body{
     height: 56px;
     margin-left: 112.5px;
     margin-top: 112.5px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .introductory-text{
@@ -447,7 +511,7 @@ body{
     line-height: 26px;
     text-align: center;
     color: #333333;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .still-advantages-list{
@@ -461,7 +525,7 @@ body{
 }
 
 .still-advantages-title{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 24px;
@@ -479,7 +543,7 @@ color: #000000;
     text-align: center;
     color: #333333;
     margin: 30px 85px 85px 85px;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .info-search{
@@ -526,7 +590,7 @@ color: #000000;
 }
 
 .introductory-heading-newsletter{
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 36px;
@@ -540,7 +604,7 @@ color: #000000;
     font-size: 22px;
     line-height: 26px;
     text-align: center;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .newsletter-form{
@@ -599,7 +663,7 @@ color: #000000;
     text-align: center;
     text-transform: uppercase;
     padding: 0;
-    font-family: 'PT Sans';
+    font-family: 'PT Sans', sans-serif;
 }
 
 .vk{
